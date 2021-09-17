@@ -1,0 +1,65 @@
+/*
+
+Desafios numéricos em Java
+
+2 / 3 - Média 1
+
+ Intermediário                         Princípios Básicos
+
+Leia 2 valores de ponto flutuante de dupla precisão A e B, que correspondem a 2 notas de um aluno. A seguir, calcule a média do aluno, sabendo que a nota A tem peso 3.5 e a nota B tem peso 7.5 (A soma dos pesos portanto é 11). Assuma que cada nota pode ir de 0 até 10.0, sempre com uma casa decimal.
+
+Entrada
+O arquivo de entrada contém 2 valores com uma casa decimal cada um.
+
+Saída
+Calcule e imprima a variável MEDIA conforme exemplo abaixo, com 5 dígitos após o ponto decimal e com um espaço em branco antes e depois da igualdade. Utilize variáveis de dupla precisão (double) e como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".
+
+ 
+Exemplos de Entrada	  Exemplos de Saída
+5.0                   MEDIA = 6.43182
+7.1
+
+0.0                   MEDIA = 4.84091
+7.1
+
+10.0                  MEDIA = 10.00000
+10.0
+
+Código dado pelo Enunciado:
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Desafio{
+	
+    public static void main(String[] args) throws IOException {
+        Scanner leitor = new Scanner(System.in);
+        
+        //complete aqui com sua solução
+
+        System.out.println(String.format("MEDIA = %.5f" , media));
+    }
+	
+}
+
+*/
+
+//
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Media {
+	
+    public static void main(String[] args)  throws IOException{
+        Scanner entrada = new Scanner(System.in);
+        //complete aqui com sua solução
+        double nota1 = entrada.nextDouble();
+        double nota2 = entrada.nextDouble();
+        double MEDIA;
+        MEDIA = (nota1 * 3.5 + nota2 * 7.5)/11;
+
+        System.out.printf("MEDIA = %.5f\n", MEDIA);
+    }
+	
+}
